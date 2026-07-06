@@ -1,0 +1,124 @@
+{
+  "entities": {
+    "Statistic": {
+      "title": "Statistic",
+      "description": "A college key-performance indicator/statistic metric.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "The label or name of the statistic." },
+        "value": { "type": "string", "description": "The current value of the statistic." },
+        "icon": { "type": "string", "description": "Lucide icon name to display." },
+        "category": { "type": "string", "description": "Categorization of statistic (e.g. Hospital, Academic)." },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last update." }
+      },
+      "required": ["name", "value"]
+    },
+    "Course": {
+      "title": "Course",
+      "description": "An academic degree or diploma program offered by the college.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "The title of the program." },
+        "duration": { "type": "string", "description": "Duration description." },
+        "intake": { "type": "number", "description": "Number of student seats allowed annually." },
+        "eligibility": { "type": "string", "description": "Admission eligibility criteria description." },
+        "fee": { "type": "string", "description": "Annual/total fee amount description." },
+        "category": { "type": "string", "enum": ["UG", "PG", "Diploma"], "description": "Degree tier category." },
+        "description": { "type": "string", "description": "Detailed program overview." }
+      },
+      "required": ["name", "duration", "intake", "eligibility", "fee", "category"]
+    },
+    "Department": {
+      "title": "Department",
+      "description": "An administrative and academic department of the medical college.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name of the department." },
+        "headOfDepartment": { "type": "string", "description": "The doctor/professor leading the department." },
+        "establishedYear": { "type": "string", "description": "Establishment year." },
+        "email": { "type": "string", "description": "Official contact email." },
+        "phone": { "type": "string", "description": "Official telephone extension." },
+        "location": { "type": "string", "description": "Physical block and floor location." },
+        "description": { "type": "string", "description": "Scope of work/services provided." }
+      },
+      "required": ["name", "headOfDepartment"]
+    },
+    "Faculty": {
+      "title": "Faculty",
+      "description": "A doctor, professor, or teacher registered at the college.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Full name of the faculty member." },
+        "designation": { "type": "string", "description": "Current official designation (e.g., HoD, Professor)." },
+        "department": { "type": "string", "description": "Department name of assignment." },
+        "qualification": { "type": "string", "description": "Degrees and professional qualifications." },
+        "email": { "type": "string", "description": "Official email address." },
+        "experience": { "type": "string", "description": "Years of experience description." },
+        "status": { "type": "string", "enum": ["Active", "On Leave"], "description": "Current active status." }
+      },
+      "required": ["name", "designation", "department", "qualification"]
+    },
+    "Notice": {
+      "title": "Notice",
+      "description": "An official announcement, warning, or upcoming event notice published for students/staff.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "Announcement headline." },
+        "content": { "type": "string", "description": "Body message text." },
+        "date": { "type": "string", "description": "Publication date." },
+        "category": { "type": "string", "enum": ["Academic", "Administrative", "General", "Event"], "description": "Category of notice." },
+        "isUrgent": { "type": "boolean", "description": "Flags if this notice should trigger popups/warnings." }
+      },
+      "required": ["title", "content", "date", "category"]
+    },
+    "Admission": {
+      "title": "Admission",
+      "description": "An admission inquiry or seat reservation request submitted by a candidate.",
+      "type": "object",
+      "properties": {
+        "studentName": { "type": "string", "description": "Applicant's full name." },
+        "course": { "type": "string", "description": "The course of choice." },
+        "email": { "type": "string", "description": "Email address." },
+        "phone": { "type": "string", "description": "Contact telephone number." },
+        "status": { "type": "string", "enum": ["Pending", "Approved", "Rejected"], "description": "Workflow processing state." },
+        "submittedAt": { "type": "string", "description": "Submission ISO timestamp." },
+        "message": { "type": "string", "description": "Optional notes or self-introduction from the student." }
+      },
+      "required": ["studentName", "course", "email", "phone", "status", "submittedAt"]
+    },
+    "ContactMessage": {
+      "title": "ContactMessage",
+      "description": "A generic user contact message or query form submission.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Sender's full name." },
+        "email": { "type": "string", "description": "Sender's email address." },
+        "subject": { "type": "string", "description": "Subject of the message." },
+        "message": { "type": "string", "description": "Body query content." },
+        "submittedAt": { "type": "string", "description": "Submission ISO timestamp." },
+        "status": { "type": "string", "enum": ["Read", "Unread"], "description": "Whether the message has been processed." }
+      },
+      "required": ["name", "email", "subject", "message", "submittedAt", "status"]
+    },
+    "AppState": {
+      "title": "AppState",
+      "description": "Full application dynamic database backup state used for live syncing.",
+      "type": "object",
+      "properties": {
+        "revision": { "type": "number", "description": "Sync revision counter." },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last backup sync." }
+      },
+      "required": ["revision"]
+    }
+  },
+  "firestore": {
+    "statistics": { "schema": "Statistic", "description": "Dynamic college key-performance indicators." },
+    "courses": { "schema": "Course", "description": "College course offering profiles." },
+    "departments": { "schema": "Department", "description": "Official college departments registry." },
+    "faculty": { "schema": "Faculty", "description": "Listing of teaching and medical practitioners." },
+    "notices": { "schema": "Notice", "description": "Announcements and official notices collection." },
+    "admissions": { "schema": "Admission", "description": "Admissions requests from students." },
+    "contactMessages": { "schema": "ContactMessage", "description": "Contact and query form submissions." },
+    "app_state": { "schema": "AppState", "description": "Dynamic operational app state snapshot." }
+  }
+}

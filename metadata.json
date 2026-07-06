@@ -1,0 +1,6 @@
+{
+  "name": "Campus Medicine Student Dashboard",
+  "description": "A student dashboard for World College of Medical Sciences & Research containing attendance analysis, exam performance, profile details, holiday calendar, and notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

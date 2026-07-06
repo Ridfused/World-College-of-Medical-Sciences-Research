@@ -1,0 +1,286 @@
+{
+  "studentProfile": {
+    "name": "Production Ready Test"
+  },
+  "attendanceItems": [
+    {
+      "minReqPercentage": 80,
+      "actualPercentage": 25,
+      "classAttended": 3,
+      "categoryName": "Clinical",
+      "totalClass": 12,
+      "subjectName": "ENT-Clinical"
+    },
+    {
+      "actualPercentage": 67,
+      "minReqPercentage": 75,
+      "categoryName": "Theory",
+      "subjectName": "Ent-Theory",
+      "totalClass": 9,
+      "classAttended": 6
+    },
+    {
+      "minReqPercentage": 75,
+      "actualPercentage": 44,
+      "classAttended": 7,
+      "totalClass": 16,
+      "subjectName": "Ent-Tutorial-Practical",
+      "categoryName": "Practical"
+    },
+    {
+      "minReqPercentage": 80,
+      "actualPercentage": 100,
+      "classAttended": 1,
+      "subjectName": "General Medicine SGD-Practical",
+      "totalClass": 1,
+      "categoryName": "Practical"
+    },
+    {
+      "actualPercentage": 57,
+      "minReqPercentage": 80,
+      "subjectName": "General Medicine-Clinical",
+      "totalClass": 23,
+      "categoryName": "Clinical",
+      "classAttended": 13
+    },
+    {
+      "classAttended": 1,
+      "categoryName": "Practical",
+      "subjectName": "GENERAL MEDICINE-Practical",
+      "totalClass": 1,
+      "minReqPercentage": 80,
+      "actualPercentage": 100
+    },
+    {
+      "minReqPercentage": 75,
+      "actualPercentage": 57,
+      "classAttended": 17,
+      "subjectName": "General Medicine-Theory",
+      "totalClass": 30,
+      "categoryName": "Theory"
+    },
+    {
+      "classAttended": 13,
+      "categoryName": "Clinical",
+      "totalClass": 24,
+      "subjectName": "General Surgery-Clinical",
+      "minReqPercentage": 80,
+      "actualPercentage": 54
+    },
+    {
+      "classAttended": 0,
+      "categoryName": "Practical",
+      "totalClass": 11,
+      "subjectName": "General Surgery-Practical",
+      "minReqPercentage": 80,
+      "actualPercentage": 0
+    },
+    {
+      "categoryName": "Theory",
+      "totalClass": 31,
+      "subjectName": "General Surgery-Theory",
+      "classAttended": 9,
+      "actualPercentage": 29,
+      "minReqPercentage": 75
+    },
+    {
+      "minReqPercentage": 80,
+      "actualPercentage": 11,
+      "classAttended": 1,
+      "totalClass": 9,
+      "subjectName": "GeneralMedicine-Practical",
+      "categoryName": "Practical"
+    },
+    {
+      "totalClass": 9,
+      "subjectName": "OBG SGD-Practical",
+      "categoryName": "Practical",
+      "classAttended": 4,
+      "actualPercentage": 44,
+      "minReqPercentage": 80
+    },
+    {
+      "classAttended": 5,
+      "subjectName": "OBG-Clinical",
+      "totalClass": 22,
+      "categoryName": "Clinical",
+      "minReqPercentage": 80,
+      "actualPercentage": 23
+    },
+    {
+      "classAttended": 2,
+      "totalClass": 10,
+      "subjectName": "OBG-Practical",
+      "categoryName": "Practical",
+      "minReqPercentage": 80,
+      "actualPercentage": 20
+    },
+    {
+      "classAttended": 11,
+      "categoryName": "Theory",
+      "subjectName": "OBG-Theory",
+      "totalClass": 21,
+      "minReqPercentage": 80,
+      "actualPercentage": 52
+    },
+    {
+      "actualPercentage": 8,
+      "minReqPercentage": 80,
+      "categoryName": "Clinical",
+      "totalClass": 12,
+      "subjectName": "Ophthalmology-Clinical",
+      "classAttended": 1
+    },
+    {
+      "categoryName": "Theory",
+      "subjectName": "Ophthalmology-Theory",
+      "totalClass": 19,
+      "classAttended": 8,
+      "actualPercentage": 42,
+      "minReqPercentage": 75
+    },
+    {
+      "minReqPercentage": 75,
+      "actualPercentage": 29,
+      "classAttended": 5,
+      "totalClass": 17,
+      "subjectName": "Ophthalmology-Tutorials-Practical",
+      "categoryName": "Practical"
+    },
+    {
+      "classAttended": 0,
+      "categoryName": "Clinical",
+      "subjectName": "Orthopaedics-Clinical",
+      "totalClass": 11,
+      "minReqPercentage": 80,
+      "actualPercentage": 0
+    },
+    {
+      "classAttended": 0,
+      "categoryName": "Practical",
+      "totalClass": 6,
+      "subjectName": "Orthopaedics-Practical",
+      "minReqPercentage": 80,
+      "actualPercentage": 0
+    },
+    {
+      "actualPercentage": 38,
+      "minReqPercentage": 80,
+      "categoryName": "Practical",
+      "subjectName": "Paediatrics SGD-Practical",
+      "totalClass": 8,
+      "classAttended": 3
+    },
+    {
+      "minReqPercentage": 80,
+      "actualPercentage": 20,
+      "classAttended": 2,
+      "categoryName": "Practical",
+      "subjectName": "paediatrics-Practical",
+      "totalClass": 10
+    },
+    {
+      "actualPercentage": 36,
+      "minReqPercentage": 75,
+      "subjectName": "Paediatrics-Theory",
+      "totalClass": 11,
+      "categoryName": "Theory",
+      "classAttended": 4
+    },
+    {
+      "categoryName": "Clinical",
+      "subjectName": "Pediatrics-Clinical",
+      "totalClass": 12,
+      "classAttended": 1,
+      "actualPercentage": 8,
+      "minReqPercentage": 80
+    },
+    {
+      "minReqPercentage": 75,
+      "actualPercentage": 0,
+      "classAttended": 0,
+      "categoryName": "Theory",
+      "subjectName": "PSYCHIATRY-Theory",
+      "totalClass": 1
+    },
+    {
+      "totalClass": 13,
+      "subjectName": "RESPIRATORY MEDICINE-Practical",
+      "categoryName": "Practical",
+      "classAttended": 1,
+      "actualPercentage": 8,
+      "minReqPercentage": 80
+    }
+  ],
+  "examPerformances": [
+    {
+      "totalMarks": "53/90",
+      "examName": "1st Class test",
+      "percentage": 58.89
+    },
+    {
+      "examName": "1st Internal Examination",
+      "percentage": 48,
+      "totalMarks": "48/100"
+    }
+  ],
+  "examSchedule": [
+    {
+      "time": "10:00 AM To 01:00 PM",
+      "room": "Lecture Hall 2",
+      "subject": "Ophthalmology (Theory Assessment)",
+      "status": "Admitted",
+      "date": "12-10-2026",
+      "id": "1"
+    },
+    {
+      "date": "15-10-2026",
+      "id": "2",
+      "time": "10:00 AM To 01:00 PM",
+      "status": "Admitted",
+      "subject": "ENT (Otorhinolaryngology Theory)",
+      "room": "Lecture Hall 1"
+    },
+    {
+      "date": "18-10-2026",
+      "id": "3",
+      "room": "Dept Clinical Lab",
+      "subject": "Ophthalmology (Clinical & Practical Exam)",
+      "status": "Admitted",
+      "time": "09:00 AM Onwards"
+    },
+    {
+      "date": "20-10-2026",
+      "id": "4",
+      "time": "09:00 AM Onwards",
+      "status": "Admitted",
+      "subject": "ENT (Clinical & Oral Vose Exam)",
+      "room": "Dept Ward-A"
+    }
+  ],
+  "gatepasses": [
+    {
+      "status": "Approved",
+      "inDate": "2026-07-02T18:00",
+      "id": 1,
+      "reason": "Weekend Outing to Home",
+      "outDate": "2026-06-30T16:00",
+      "timestamp": "26/06/2026"
+    },
+    {
+      "status": "Approved",
+      "inDate": "2026-06-25T14:00",
+      "reason": "Medical Checkup in Rohtak",
+      "outDate": "2026-06-25T10:00",
+      "timestamp": "24/06/2026",
+      "id": 2
+    }
+  ],
+  "pendingFeeBalance": 5000,
+  "username": "admin",
+  "isAuthenticated": true,
+  "activeTab": "holiday_calendar",
+  "revision": 10,
+  "updatedAt": "2026-07-05T17:32:21.458Z",
+  "isAdmin": true
+}
